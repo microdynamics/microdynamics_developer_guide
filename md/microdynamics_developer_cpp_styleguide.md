@@ -750,8 +750,7 @@ const int kDaysInAWeek = 7;
 
 枚举值应该采用宏的命名方式。
 ``` cpp
-enum AlternateUrlTableErrors
-{
+enum AlternateUrlTableErrors {
   OK = 0,
     OUT_OF_MEMORY = 1,
     MALFORMED_INPUT = 2
@@ -810,15 +809,15 @@ enum AlternateUrlTableErrors
 举个例子：
 
 ```cpp
-/*********************************************************************
- * Software License Agreement (BSD License)
+/***********************************************************************
+ *  Software License Agreement (BSD License)
  *
- * Copyright (c) 2016, Team MicroDynamics
- * All rights reserved.
+ *  Copyright (c) 2016, Team MicroDynamics
+ *  All rights reserved.
  *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
+ *  Redistribution and use in source and binary forms, with or without
+ *  modification, are permitted provided that the following conditions
+ *  are met:
  *
  *  * Redistributions of source code must retain the above copyright
  *    notice, this list of conditions and the following disclaimer.
@@ -831,28 +830,28 @@ enum AlternateUrlTableErrors
  *    derived from this software without specific prior written
  *    permission.
  *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
- * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
- * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
- * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
- * COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
- * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
- * BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
- * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
- * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
- * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
- * ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- * POSSIBILITY OF SUCH DAMAGE.
- *********************************************************************/
+ *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ *  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ *  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ *  FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ *  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ *  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ *  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ *  CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ *  LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+ *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ *  POSSIBILITY OF SUCH DAMAGE.
+ ***********************************************************************
 
-/*********************************************************************
+ ***********************************************************************
  * History:
  * <Authors>        <Date>        <Operation>
  * myyerrol         2016.7.5      Create this file
  *
  * Description:
  * This file can do ...
- *********************************************************************/
+ **********************************************************************/
 ```
 
 ### 6.3 类注释
@@ -963,8 +962,7 @@ const int kNumTestCases = 6;
 ``` cpp
 // Divide result by two， taking into account that x
 // contains the carry from the add.
-for (int i = 0; i < result->size(); i++)
-{
+for (int i = 0; i < result->size(); i++) {
   x = (x << 8) + (*result)[i];
     (*result)[i] = x >> 1;
     x &= 1;
@@ -1128,8 +1126,7 @@ bool retval = DoSomething(averyveryveryverylongargument1，
 参数也可以放在次行，缩进四格：
 
 ``` cpp
-if (...)
-{
+if (...) {
   DoSomething(
         argument1, argument2,
         argument3, argument4);
@@ -1309,8 +1306,7 @@ const string & str;
 ``` cpp
 if (this_one_thing > this_other_thing &&
     a_third_thing == a_fourth_thing &&
-    yet_another & last_one)
-{
+    yet_another & last_one) {
     ...
 }
 ```
@@ -1386,8 +1382,7 @@ int pi{3.14};
 即使预处理指令位于缩进代码块中，指令也应从行首开始。
 
 ``` cpp
-    if (lopsided_score)
-    {
+    if (lopsided_score) {
 // 正确：从行开头起。
 #if DISASTER_PENDING
         DropEverything();
@@ -1399,8 +1394,7 @@ int pi{3.14};
 **Warning**
 
 ``` cpp
-    if (lopsided_score)
-    {
+    if (lopsided_score) {
         // 警告："#if" 应该放在行开头。
         #if DISASTER_PENDING
         DropEverything();
@@ -1499,8 +1493,7 @@ if (b) {}
 switch (i) {}
 while (test) {}
 for (int i = 0; i < 5; ++i) {}
-switch (i)
-{
+switch (i) {
     // case 的冒号前无空格。
     case 1:
     ...
