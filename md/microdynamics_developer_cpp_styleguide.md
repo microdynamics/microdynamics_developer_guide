@@ -524,7 +524,7 @@ fprintf(stderr, "Error connecting to '%s:%u:%s",
 结论：<br>
 对简单数值 （非对象），两种都无所谓。对迭代器和模板类型，使用前置自增（自减）。
 
-### 4.9 `const` 用法
+### 4.9 const 用法
 
 > **Tip**
 >
@@ -590,13 +590,13 @@ for (unsigned int i = foo.Length() - 1; i >= 0; --i) ...
 
 因此，使用断言来指出变量为非负数，而不是使用无符号型！
 
-### 4.11  `nullptr` 和 `NULL`
+### 4.11  nullptr 和 NULL
 
 > **Tip**
 >
 > 整数用 `0`，实数用 `0.0`，指针用 `nullptr` 或 `NULL`，字符 （串） 用 `'\0'`。
 
-### 4.12 `sizeof`
+### 4.12 sizeof`
 
 > **Tip**
 >
