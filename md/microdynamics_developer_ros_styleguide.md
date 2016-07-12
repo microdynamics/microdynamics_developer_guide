@@ -4,11 +4,11 @@
 
 ### 0.1 版本
 
-- 1.0版本(2016.5.1)：缪宇飏(myyerrol)创建团队 ROS 开发风格指南。本文档参考了 [ROS 官方风格指南](http://wiki.ros.org/DevelopersGuide)，并根据实际的需求，对内容进行了适当的精简和改进。新队员应该认真学习本指南，掌握 ROS 基本的开发风格以及适用于本项目组的特定规则。如果有细节不统一的地方或者对本文档某处不是很认同，请在组内讨论统一之后，修改本指南。因为文档排版使用的是 Markdown 纯文本标记语言，也请后来者遵循本文档的开发方式，使用 Markdown 来修改、添加内容。
+- 1.0版本(2016.7.5)：缪宇飏(myyerrol)创建团队 ROS 开发风格指南。本文档参考了 [ROS 官方风格指南](http://wiki.ros.org/DevelopersGuide)，并根据实际的需求，对内容进行了适当的精简和改进。新成员应该认真学习本指南，掌握 ROS 基本的开发风格以及适用于本项目组的特定规则。如果有细节不统一的地方或者对本文档某处不是很认同，请在组内讨论统一之后，修改本指南。因为文档排版使用的是 Markdown 纯文本标记语言，也请后来者遵循本文档的开发方式，使用 Markdown 来修改、添加内容。
 
 ### 0.2 背景
 
-开源项目需要团队队员不断地贡献代码，但是如果队员之间所使用的 ROS 开发风格不一致，便会给团队其他模块负责人造成不小的困扰。我们认为整洁、一致的 ROS 开发风格会使整个项目更加可管理和维护。因此，我们应当使用统一的 ROS 开发风格以使得每个功能包不仅能够在现在发挥作用，而且在将来的若干年之后其依旧能够存在、可以被复用、或者是能够被未来的新队员改进。
+开源项目需要团队成员不断地贡献代码，但是如果成员之间所使用的 ROS 开发风格不一致，便会给团队其他模块负责人造成不小的困扰。我们认为整洁、一致的 ROS 开发风格会使整个项目更加可管理、可调试和可维护。因此，我们应当使用统一的 ROS 开发风格以使得每个功能包不仅能够在现在发挥作用，而且在将来的若干年之后其依旧能够存在、可以被复用、或者是能够被未来的新成员改进。
 
 ## 1. ROS 命名指南
 
@@ -307,7 +307,6 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
 LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
 ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
-
 ```
 
 ``` cpp
@@ -345,7 +344,6 @@ POSSIBILITY OF SUCH DAMAGE.
  *  ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  *  POSSIBILITY OF SUCH DAMAGE.
  **********************************************************************/
-
 ```
 
 ``` python
