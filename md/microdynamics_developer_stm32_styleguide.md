@@ -18,7 +18,7 @@
 
 #### 1.1.1 缩写
 
-|缩写      |外设/单元 |
+|缩写     |外设/单元|
 |:--------|:--------|
 |ADC      |模数转换器|
 |BKP      |备份寄存器|
@@ -42,25 +42,25 @@
 
 #### 1.1.2 命名规则
 
-1. 系统、源程序文件和头文件命名都以“stm32f10x_”作为开头，例如：stm32f10x_conf.h。
-2. 常量仅被应用于一个文件的，定义于该文件中。被应用于多个文件的，在对应头文件中定义。所有常量都由英文字母大写书写。
-3. 寄存器作为常量处理。他们的命名都由英文字母大写书写。在大多数情况下，他们采用与缩写规范与本用户手册一致。
-4. 外设函数的命名以该外设的缩写加下划线为开头。每个单词的第一个字母都由英文字母大写书写，例如：SPI_SendData。在函数名中，只允许存在一个下划线，用以分隔外设缩写和函数名的其它部分。
-5. 名为 PPP_Init 的函数，其功能是根据 PPP_InitTypeDef 中指定的参数，初始化外设 PPP，例如 TIM_Init。
-6. 名为 PPP_DeInit 的函数，其功能为复位外设 PPP 的所有寄存器至缺省值，例如 TIM_DeInit。
-7. 名为 PPP_StructInit 的函数，其功能为通过设置 PPP_InitTypeDef 结构中的各种参数来定义外设的功能。例如:USART_StructInit。
-8. 名为 PPP_Cmd 的函数，其功能为使能或者失能外设 PPP。例如：SPI_Cmd。
-9. 名为 PPP_ITConfig 的函数，其功能为使能或者失能来自外设 PPP 某中断源，例如：RCC_ITConfig。
-10. 名为 PPP_DMAConfig 的函数，其功能为使能或者失能外设 PPP 的 DMA 接口。例如：TIM1_DMAConfig。
-11. 用以配置外设功能的函数，总是以字符串“Config”结尾。例如：GPIO_PinRemapConfig。
-12. 名为 PPP_GetFlagStatus 的函数，其功能为检查外设 PPP 某标志位被设置与否。例如：I2C_GetFlagStatus。
-13. 名为 PPP_ClearFlag 的函数，其功能为清除外设 PPP 标志位。例如：I2C_ClearFlag。
-14. 名为 PPP_GetITStatus 的函数，其功能为判断来自外设 PPP 的中断发生与否。例如：I2C_GetITStatus。
-15. 名为 PPP_ClearITPendingBit 的函数，其功能为清除外设 PPP 中断待处理标志位。例如：I2C_ClearITPendingBit。
+- 系统、源程序文件和头文件命名都以“stm32f10x_”作为开头。例如：stm32f10x_conf.h。
+- 常量仅被应用于一个文件的，定义于该文件中。被应用于多个文件的，在对应头文件中定义。所有常量都由英文字母大写书写。
+- 寄存器作为常量处理。他们的命名都由英文字母大写书写。在大多数情况下，他们采用与缩写规范与本用户手册一致。
+- 外设函数的命名以该外设的缩写加下划线为开头。每个单词的第一个字母都由英文字母大写书写，例如：SPI_SendData。在函数名中，只允许存在一个下划线，用以分隔外设缩写和函数名的其它部分。
+- 名为 PPP_Init 的函数，其功能是根据 PPP_InitTypeDef 中指定的参数，初始化外设 PPP，例如 TIM_Init。
+- 名为 PPP_DeInit 的函数，其功能为复位外设 PPP 的所有寄存器至缺省值，例如 TIM_DeInit。
+- 名为 PPP_StructInit 的函数，其功能为通过设置 PPP_InitTypeDef 结构中的各种参数来定义外设的功能。例如:USART_StructInit。
+- 名为 PPP_Cmd 的函数，其功能为使能或者失能外设 PPP。例如：SPI_Cmd。
+- 名为 PPP_ITConfig 的函数，其功能为使能或者失能来自外设 PPP 某中断源，例如：RCC_ITConfig。
+- 名为 PPP_DMAConfig 的函数，其功能为使能或者失能外设 PPP 的 DMA 接口。例如：TIM1_DMAConfig。
+- 用以配置外设功能的函数，总是以字符串“Config”结尾。例如：GPIO_PinRemapConfig。
+- 名为 PPP_GetFlagStatus 的函数，其功能为检查外设 PPP 某标志位被设置与否。例如：I2C_GetFlagStatus。
+- 名为 PPP_ClearFlag 的函数，其功能为清除外设 PPP 标志位。例如：I2C_ClearFlag。
+- 名为 PPP_GetITStatus 的函数，其功能为判断来自外设 PPP 的中断发生与否。例如：I2C_GetITStatus。
+- 名为 PPP_ClearITPendingBit 的函数，其功能为清除外设 PPP 中断待处理标志位。例如：I2C_ClearITPendingBit。
 
 ### 1.1.3 编码规则
 
-- 变量
+1、变量<br>
 固态函数库定义了 24 个变量类型，他们的类型和大小是固定的。在文件 stm32f10x_type.h 中我们定义了这些变量：
 
 ``` c
@@ -90,7 +90,7 @@ typedef volatile unsigned short const vuc16; /* Read Only */
 typedef volatile unsigned char const vuc8; /* Read Only */
 ```
 
-- 布尔类型
+2、布尔类型<br>
 在文件 stm32f10x_type.h 中，布尔形变量被定义如下：
 
 ```c
@@ -101,7 +101,7 @@ typedef enum
 } bool;
 ```
 
-- 标志位状态类型
+3、标志位状态类型<br>
 在文件 stm32f10x_type.h 中，我们定义标志位类型(FlagStatus type)的 2 个可能值为“设置”100与“重置”(SET or RESET)。
 
 ```c
@@ -112,7 +112,7 @@ typedef enum
 } FlagStatus;
 ```
 
-- 功能状态类型
+4、功能状态类型<br>
 在文件 stm32f10x_type.h 中，我们定义功能状态类型(FunctionalState type)的 2 个可能值为“使能”与“失能”(ENABLE or DISABLE)。
 
 ```c
