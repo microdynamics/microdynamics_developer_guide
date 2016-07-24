@@ -44,10 +44,8 @@
 
 1. 系统、源程序文件和头文件命名都以“stm32f10x_”作为开头，例如：stm32f10x_conf.h。
 2. 常量仅被应用于一个文件的，定义于该文件中。被应用于多个文件的，在对应头文件中定义。所有常量都由英文字母大写书写。
-3. 寄存器作为常量处理。他们的命名都由英文字母大写书写。在大多数情况下，他们采用
-与缩写规范与本用户手册一致。
-4. 外设函数的命名以该外设的缩写加下划线为开头。每个单词的第一个字母都由英文字母
-大写书写，例如：SPI_SendData。在函数名中，只允许存在一个下划线，用以分隔外设缩写和函数名的其它部分。
+3. 寄存器作为常量处理。他们的命名都由英文字母大写书写。在大多数情况下，他们采用与缩写规范与本用户手册一致。
+4. 外设函数的命名以该外设的缩写加下划线为开头。每个单词的第一个字母都由英文字母大写书写，例如：SPI_SendData。在函数名中，只允许存在一个下划线，用以分隔外设缩写和函数名的其它部分。
 5. 名为 PPP_Init 的函数，其功能是根据 PPP_InitTypeDef 中指定的参数，初始化外设 PPP，例如 TIM_Init。
 6. 名为 PPP_DeInit 的函数，其功能为复位外设 PPP 的所有寄存器至缺省值，例如 TIM_DeInit。
 7. 名为 PPP_StructInit 的函数，其功能为通过设置 PPP_InitTypeDef 结构中的各种参数来定义外设的功能。例如:USART_StructInit。
@@ -62,7 +60,7 @@
 
 ### 1.1.3 编码规则
 
-1. 变量
+- 变量
 固态函数库定义了 24 个变量类型，他们的类型和大小是固定的。在文件 stm32f10x_type.h 中我们定义了这些变量：
 
 ``` c
@@ -92,7 +90,7 @@ typedef volatile unsigned short const vuc16; /* Read Only */
 typedef volatile unsigned char const vuc8; /* Read Only */
 ```
 
-2. 布尔型
+- 布尔类型
 在文件 stm32f10x_type.h 中，布尔形变量被定义如下：
 
 ```c
@@ -103,7 +101,7 @@ typedef enum
 } bool;
 ```
 
-3. 标志位状态类型
+- 标志位状态类型
 在文件 stm32f10x_type.h 中，我们定义标志位类型(FlagStatus type)的 2 个可能值为“设置”100与“重置”(SET or RESET)。
 
 ```c
@@ -114,7 +112,7 @@ typedef enum
 } FlagStatus;
 ```
 
-4. 功能状态类型
+- 功能状态类型
 在文件 stm32f10x_type.h 中，我们定义功能状态类型(FunctionalState type)的 2 个可能值为“使能”与“失能”(ENABLE or DISABLE)。
 
 ```c
