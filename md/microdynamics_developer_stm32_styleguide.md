@@ -1442,7 +1442,7 @@ int sub(int a, int b)
 void print_record(unsigned int rec_ind);
 int input_record(void);
 unsigned char get_current_color(void);
-```
+```
 
 **19、避免使用无意义或含义不清的动词为函数命名。**
 
