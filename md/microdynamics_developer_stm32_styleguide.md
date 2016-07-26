@@ -1634,3 +1634,67 @@ int msg_process(EXAM_MESSAGE *msg)
     unsigned char service; /* message service class */
 }
 ```
+
+## 2. 工程规范
+
+以下讲解 STM32 工程组织的规范，具体例子请参考 [STM32 工程模板](https://github.com/microdynamics/microdynamics_stm32_template)。
+
+### 2.1 建立工程目录
+
+在项目根目录下分别创建 Build、Documents、Drivers、Libraries、Project 和 User 目录。
+
+**1、Build** <br>
+Build 目录中包含 Listing 和 Output 两个子目录。Listing 目录存放产生的列表文件，Output 目录中主要存放编译过程中产生的临时文件。
+
+**2、Documents** <br>
+Documents 目录中存放工程的说明文档等资料。
+
+**3、Drivers** <br>
+Drivers 目录中存放硬件驱动代码。
+
+**4、Libraries** <br>
+Libraries 目录中包含 CMSIS 和 FWLib 两个子目录。CMSIS 目录存放 ARM 提供的软件接口标准文件，而 FWLib 目录中存放的是 ST 提供的固件库。
+
+**5、Project** <br>
+Project 目录中存放 ARM-MDK 产生的工程文件。
+
+**6、User** <br>
+User 目录存放用户自己编写的各种源文件。
+
+### 2.2 添加库文件
+
+1、将 STM32F10x_StdPeriph_Driver 中的 inc 和 src 目录复制到 Drivers/FWLib 目录中。
+
+2、将 CoreSupport 文件夹下的文件复制到 Drivers/CMSIS 目录中。
+
+3、将 DeviceSupport 中的文件复制到 Drivers/CMSIS 目录中。
+
+4、将 startup/arm 中的文件复制到 Drivers/CMSIS/startup 目录中。
+
+5、将 STM32F10x_StdPeriph_Template 中的相关文件复制到 User 目录中。
+
+### 2.3 建立工程
+
+1、用 Keil5 创建工程时，将保存工程文件的目录选择为 Project。删掉系统默认生成的 Listings 和 Objects 目录。
+
+2、修改工程名为小写，并与工程目录名保持一致。
+
+3、为工程添加项目组并根据需求添加相应的文件。具体的文件分组和添加请看 [STM32 工程模板](https://github.com/microdynamics/microdynamics_stm32_template)。
+
+### 2.4 工程配置
+
+**1、Target** <br>
+选择 `Use MicroLIB` 选项。
+
+**2、Output** <br>
+选择 `Create Executable`、`Debug Information`、`Create Hex`、`Browse Information` 等选项，并设置输出文件夹为 Build/Output。
+
+**3、Listing** <br>
+选择输出文件夹为 Build/Listing。
+
+**4、C/C++** <br>
+在 `Define` 中输入 `STM32F10X_MD, USE_STDPERIPH_DRIVER`。选择 `One ELF Section per Function` 选项，并在 `Include Paths` 中将所有库的头文件路径包含进去。
+
+### 2.5 调试配置
+
+请自行查看相关资料！。
