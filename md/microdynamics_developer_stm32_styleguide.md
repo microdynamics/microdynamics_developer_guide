@@ -768,13 +768,29 @@ if (...)
 
 示例：如下单词的缩写能够被大家基本认可。
 
-|单词      |缩写|
-|:------- |:---|
-|temp     |tmp |
-|flag     |flg |
-|statistic|stat|
-|increment|inc |
-|message  |msg |
+|单词          |缩写       |单词          |缩写  |单词          |缩写|
+|:-------      |:---       |:-------      |:---  |:-------      |:---|
+|addition      |add        |float         |flt   |previous      |pre或prev |
+|answer        |ans        |frequency     |freq  |payload type  |pt |
+|array         |arr        |header        |hdr   |pointer       |ptr |
+|average       |avg        |index         |idx   |return code   |rc |
+|buffer        |buf或buff  |image         |img   |record        |rcd |
+|capture       |cap或capt  |increment     |inc   |receive       |recv |
+|check         |chk        |initalize     |init  |result        |res |
+|count         |cnt        |iteration     |itr   |return        |ret |
+|column        |col        |length        |len   |source        |src |
+|control       |ctrl       |memory        |mem   |stack         |stk |
+|decode        |dec        |middle        |mid   |statistic     |stat |
+|define        |def        |make          |mk    |string        |str |
+|delete        |del        |message       |msg   |subtraction   |sub |
+|destination   |dst或dest  |multiplication|mul   |table         |tab |
+|display       |disp       |number        |num   |temporary     |tmp或temp |
+|division      |div        |operand       |opnd  |total         |tot |
+|encode        |enc        |optimization  |opt   |time stamp    |ts |
+|environment   |env        |operator      |optr  |value         |val |
+|error         |err        |packet        |pkt 
+|flag          |flg        |positon       |pos 
+
 
 **2、命名中若使用特殊约定或缩写，则要有注释说明。**
 
