@@ -5,6 +5,7 @@
 ### 0.1 版本
 
 - 1.0版本(2016.7.5)：缪宇飏(myyerrol)创建团队 C++ 代码开发风格指南。本文档参考了 ROS 和 Google 的 C++ 风格指南，并根据实际的需求，对内容进行了适当的精简和改进。新成员应该认真学习本指南，掌握 C++ 基本的开发风格。如果有细节不统一的地方或者对本文档某处不是很认同，请在组内讨论统一之后，修改本指南。因为文档排版使用的是 Markdown 纯文本标记语言，也请后来者遵循本文档的开发方式，使用 Markdown 来修改、添加内容。
+- 1.1版本(2016.7.20)：缪宇飏(myyerrol)修改LICENSE的格式。
 
 ### 0.2 背景
 
@@ -821,14 +822,13 @@ enum AlternateUrlTableErrors {
  *
  *  * Redistributions of source code must retain the above copyright
  *    notice, this list of conditions and the following disclaimer.
- *  * Redistributions in binary form must reproduce the above
- *    copyright notice, this list of conditions and the following
- *    disclaimer in the documentation and/or other materials provided
- *    with the distribution.
- *  * Neither the name of the Team MicroDynamics nor the names
- *    of its contributors may be used to endorse or promote products
- *    derived from this software without specific prior written
- *    permission.
+ *  * Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in
+ *    the documentation and/or other materials provided with the
+ *    distribution.
+ *  * Neither the name of the Team MicroDynamics nor the names of its
+ *    contributors may be used to endorse or promote products derived
+ *    from this software without specific prior written permission.
  *
  *  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  *  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
