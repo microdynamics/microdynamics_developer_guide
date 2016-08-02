@@ -483,7 +483,7 @@ History:
 示例：下面这段源文件的头注释比较标准，当然，并不局限于此格式，但上述信息建议要包含在内。
 
 ```c
-/************************************************************
+/*************************************************
 Copyright (C), 1988-1999, Huawei Tech. Co., Ltd.
 
 FileName: test.cpp
@@ -504,7 +504,7 @@ Function List:
 History:
 <author>    <time>    <version>    <desc>
 David       96/10/12  1.0          Build this moudle
-***********************************************************/
+*************************************************/
 ```
 
 说明：Description 一项描述本文件的内容、功能、内部各部分之间的关系及本文件与其它文件关系等。History 是修改历史记录列表，每条修改记录应包括修改日期、修改者及修改内容简述。
@@ -598,7 +598,7 @@ enum SCCP_USER_PRIMITIVE
 示例：
 
 ```c
-/*************************************************************
+/*************************************************
 * Variable function:
 *      The ErrorCode when SCCP translate Global Title failure, as
 *follows
@@ -611,7 +611,7 @@ enum SCCP_USER_PRIMITIVE
 *      only function SCCPTranslate() in this modual can modify
 *      it,another module can visit it through call the function
 *      GetGTTransErrorCode()
-*************************************************************/
+*************************************************/
 BYTE g_GTTranErrorCode;
 ```
 
