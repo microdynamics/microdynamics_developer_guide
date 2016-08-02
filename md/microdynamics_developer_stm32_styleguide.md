@@ -607,7 +607,7 @@ enum SCCP_USER_PRIMITIVE
 *      1 - GT Table error
 *      2 - GT error
 *      Others - no use
-* Call ralationship:
+* Call relationship:
 *      only function SCCPTranslate() in this modual can modify
 *      it,another module can visit it through call the function
 *      GetGTTransErrorCode()
