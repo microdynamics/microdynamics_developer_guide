@@ -1657,7 +1657,7 @@ int msg_process(EXAM_MESSAGE *msg)
 
 ### 2.1 建立工程目录
 
-在项目根目录下分别创建 Build、Documents、Drivers、Libraries、Project 和 User 目录。
+在项目根目录下分别创建 Build、Documents、Drivers、Libraries、Project、System 和 User 目录。
 
 **1、Build** <br>
 Build 目录中包含 Listing 和 Output 两个子目录。Listing 目录存放产生的列表文件，Output 目录中主要存放编译过程中产生的临时文件。
@@ -1674,7 +1674,10 @@ Libraries 目录中包含 CMSIS 和 FWLib 两个子目录。CMSIS 目录存放 A
 **5、Project** <br>
 Project 目录中存放 ARM-MDK 产生的工程文件。
 
-**6、User** <br>
+**6、System** <br>
+System 目录中存放相关软件实现代码。
+
+**7、User** <br>
 User 目录存放用户自己编写的各种源文件。
 
 ### 2.2 添加库文件
