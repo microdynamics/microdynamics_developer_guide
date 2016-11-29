@@ -508,6 +508,7 @@ David       96/10/12  1.0          Build this moudle
 ```
 
 说明：Description 一项描述本文件的内容、功能、内部各部分之间的关系及本文件与其它文件关系等。History 是修改历史记录列表，每条修改记录应包括修改日期、修改者及修改内容简述。
+
 **现在Team MicroDynamics使用的代码头(以stm32f10x_driver_sys.c为例)：**
 
 ```c
