@@ -509,6 +509,29 @@ David       96/10/12  1.0          Build this moudle
 
 说明：Description 一项描述本文件的内容、功能、内部各部分之间的关系及本文件与其它文件关系等。History 是修改历史记录列表，每条修改记录应包括修改日期、修改者及修改内容简述。
 
+现在Team MicroDynamics使用的代码头(以stm32f10x_driver_sys.c为例)：
+
+```c
+/*******************************************************************************
+THIS PROGRAM IS FREE SOFTWARE. YOU CAN REDISTRIBUTE IT AND/OR MODIFY IT 
+UNDER THE TERMS OF THE GNU GPLV3 AS PUBLISHED BY THE FREE SOFTWARE FOUNDATION.
+
+Copyright (C), 2016-2016, Team MicroDynamics <microdynamics@126.com>
+
+Filename:    stm32f10x_driver_sys.c
+Author:      maksyuki
+Version:     0.1.0.20161231_release
+Create date: 2016.8.3
+Description: define the bitband operation
+Others:      none
+Function List:
+             none
+History:
+1. <author>    <date>         <desc>
+   maksyuki  2016.11.29  modify the module
+*******************************************************************************/
+```
+
 **4、函数头部应进行注释，列出：函数的目的/功能、输入参数、输出参数、返回值、调用关系(函数、表)等。**
 
 示例：下面这段函数的注释比较标准，当然，并不局限于此格式，但上述信息建议要包含在内。
